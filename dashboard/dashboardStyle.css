@@ -15,37 +15,35 @@ body {
 .sidebar {
   width: 15%;
   height: 100vh;
-  background: #2e86de;
+  background: #1e92af;
   color: #fff;
-  padding: 40px 20px 20px 20px;
+  padding: 40px 20px 20px 60px;
 }
 
 .sidebar .logo {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 900;
   margin-bottom: 40px;
 }
 
-/* .sidebar__header{
-margin-bottom: 20px;
 
-} */
 
 .sidebar ul {
   list-style: none;
-
 }
 
 .sidebar li {
-  padding: 10px 0;
+  padding: 10px;
   cursor: pointer;
   margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .sidebar li:hover {
-  background: #4b7bec;
-  padding: 10px 10px 10px 0;
+  background: #6ccbe3;
   border-radius: 5px;
+  color: black;
 }
 
 /* Main Content */
