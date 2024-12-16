@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 1080px) {
+  * {
+    display: none;
+  }
+}
+
 .container {
   background-image: url("/assets/images/black-mother-taking-car-her-child.jpg");
   background-repeat: no-repeat;
@@ -53,6 +59,10 @@
     outline: none;
     border: none;
     background-color: white;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    font-weight: 500;
   }
 
   .login-button:hover {

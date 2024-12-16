@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  background-color: #f5f6fa;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 15%;
+  height: 100vh;
+  background: #2e86de;
+  color: #fff;
+  padding: 40px 20px 20px 20px;
+}
+
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* .sidebar__header{
+margin-bottom: 20px;
+
+} */
+
+.sidebar ul {
+  list-style: none;
+
+}
+
+.sidebar li {
+  padding: 10px 0;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.sidebar li:hover {
+  background: #4b7bec;
+  padding: 10px 10px 10px 0;
+  border-radius: 5px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 40px 30px 30px 30px;
+  width: 70%;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+.stats-cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #ddd;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.card .green {
+  color: green;
+}
+
+.card .red {
+  color: red;
+}
+
+/* Charts */
+.charts {
+  display: flex;
+  margin: 20px 0;
+}
+
+#patient-arrival,
+#financial-flow {
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  background: #fff;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #4b7bec;
+  color: #fff;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.inpatient {
+  color: green;
+}
+
+.status.outpatient {
+  color: red;
+}
+
+@media (max-width: 1080px) {
+  * {
+    display: none;
+  }
+}
