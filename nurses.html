@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Medical Dashboard</title>
-    <link rel="stylesheet" href="./dashboardStyle.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./contentstyles.css" />
   </head>
   <body>
     <!-- Sidebar -->
@@ -12,16 +12,24 @@
       <div class="logo">H.I.S</div>
       <nav>
         <ul>
-          <li class="sidebar__header">Dashboard</li>
-          <li>Patients</li>
-          <li>Doctors</li>
-          <li>Nurses</li>
+          <li class="sidebar__header">
+            <a id="dashboard-btn" href="./dashboard.html">Dashboard</a>
+          </li>
+          <li class="sidebar__header">
+            <a id="patient-btn" href="./patient.html">Patients</a>
+          </li>
+          <li class="sidebar__header">
+            <a id="doctor-btn" href="./doctor.html">Doctors</a>
+          </li>
+          <li class="sidebar__header">
+            <a id="nurses-btn" href="./nurses.html">Nurses</a>
+          </li>
         </ul>
       </nav>
     </div>
 
     <!-- Main Dashboard -->
-    <div class="main-content">
+    <div id="main-content" class="main-content">
       <header>
         <h1>Welcome Back, Ali Husni!</h1>
         <p>
@@ -114,6 +122,6 @@
     <!-- JavaScript -->
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./dashboard.js"></script>
+    <script src="./dashboard.js" />
   </body>
 </html>

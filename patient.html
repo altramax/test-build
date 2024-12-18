@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./contentstyles.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">H.I.S</div>
+      <nav>
+        <ul>
+          <li class="sidebar__header">
+            <a id="dashboard-btn" href="./dashboard.html">Dashboard</a>
+          </li>
+          <li class="sidebar__header">
+            <a id="patient-btn" href="./patient.html">Patients</a>
+          </li>
+          <li class="sidebar__header">
+            <a id="doctor-btn" href="./doctor.html">Doctors</a>
+          </li>
+          <li class="sidebar__header">
+            <a id="nurses-btn" href="./nurses.html">Nurses</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div id="main-content" class="main-content">
+      <header>
+        <h1>Welcome Back, Ali Husni!</h1>
+        <p>
+          Let's Rock today. We have <b>2 Pending Tasks</b> and
+          <b>5 New Records</b>.
+        </p>
+      </header>
+
+      <!-- Stats Cards -->
+      <div class="stats-cards">
+        <div class="card">
+          <h3>Patient Record</h3>
+          <p>365 <span class="green">+142</span></p>
+          <small>Increased vs last month</small>
+        </div>
+        <div class="card">
+          <h3>Surgeries Performed</h3>
+          <p>
+            720 <span class="green">+316</span> | Emergency: 480
+            <span class="red">-120</span>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Compliance Rate</h3>
+          <p>98% <span class="green">+8.3%</span></p>
+          <small>Increased vs last month</small>
+        </div>
+      </div>
+
+      <!-- Patient Table -->
+      <div class="patient-list">
+        <div class="patient-list-header">
+          <h3>Patient List</h3>
+          <button id="add-patient-btn" class="add-patient-btn">
+            Add Patient
+          </button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Patient ID</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Department</th>
+              <th>Primary Diagnosis</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001234</td>
+              <td>John Smith</td>
+              <td>45</td>
+              <td>Male</td>
+              <td>Cardiology</td>
+              <td>Coronary Artery Disease</td>
+              <td class="status inpatient">INPATIENT</td>
+            </tr>
+            <tr>
+              <td>001235</td>
+              <td>Maria Hernandez</td>
+              <td>32</td>
+              <td>Female</td>
+              <td>General Surgery</td>
+              <td>Appendicitis</td>
+              <td class="status outpatient">OUTPATIENT</td>
+            </tr>
+            <tr>
+              <td>001236</td>
+              <td>James Johnson</td>
+              <td>65</td>
+              <td>Male</td>
+              <td>Oncology</td>
+              <td>Lung Cancer</td>
+              <td class="status inpatient">INPATIENT</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="dataModal" class="modal">
+      <!-- Modal structure -->
+      <div class="modal">
+        <div class="modal-content">
+          <span id="closeModal" class="close">&times;</span>
+          <h2>Add New Data</h2>
+          <form id="dataForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name" required />
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter age" required />
+
+            <label for="extraField" id="extraLabel">Gender:</label>
+            <input
+              type="text"
+              id="extraField"
+              placeholder="Enter gender"
+              required
+            />
+
+            <button type="button" id="saveNurseData">Save Nurse Data</button>
+            <button type="button" id="savePatientData">
+              Save Patient Data
+            </button>
+          </form>
+        </div>
+      </div>
+      <h2>Patient Data</h2>
+      <table id="patientTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Diagnosis</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./dashboard.js" />
+  </body>
+</html>
