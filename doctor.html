@@ -41,7 +41,7 @@
     <!-- Stats Cards -->
     <div class="stats-cards">
       <div class="card">
-        <h3>Patient Record</h3>
+        <h3>Doctors Record</h3>
         <p>365 <span class="green">+142</span></p>
         <small>Increased vs last month</small>
       </div>
@@ -59,66 +59,52 @@
       </div>
     </div>
 
-    <!-- Charts and Table -->
-    <div class="charts">
-      <div id="patient-arrival">
-        <h3>Patient Arrival Statistics</h3>
-        <canvas id="lineChart"></canvas>
-      </div>
-      <div id="financial-flow">
-        <h3>Financial Flow</h3>
-        <canvas id="barChart"></canvas>
-      </div>
-    </div>
-
     <!-- Patient Table -->
     <div class="patient-list">
-      <h3>Patient List</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Patient ID</th>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Gender</th>
-            <th>Department</th>
-            <th>Primary Diagnosis</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>001234</td>
-            <td>John Smith</td>
-            <td>45</td>
-            <td>Male</td>
-            <td>Cardiology</td>
-            <td>Coronary Artery Disease</td>
-            <td class="status inpatient">INPATIENT</td>
-          </tr>
-          <tr>
-            <td>001235</td>
-            <td>Maria Hernandez</td>
-            <td>32</td>
-            <td>Female</td>
-            <td>General Surgery</td>
-            <td>Appendicitis</td>
-            <td class="status outpatient">OUTPATIENT</td>
-          </tr>
-          <tr>
-            <td>001236</td>
-            <td>James Johnson</td>
-            <td>65</td>
-            <td>Male</td>
-            <td>Oncology</td>
-            <td>Lung Cancer</td>
-            <td class="status inpatient">INPATIENT</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+        <div class="patient-list-header">
+          <h3>Doctors List</h3>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Doctor ID</th>
+              <th>Name</th>
+              <th>Specialty</th>
+              <th>Years of Experience</th>
+              <th>Contact</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>DOC001</td>
+              <td>Dr. John Smith</td>
+              <td>Cardiology</td>
+              <td>20</td>
+              <td>+1 (555) 123-4567</td>
+              <td class="status active">ACTIVE</td>
+            </tr>
+            <tr>
+              <td>DOC002</td>
+              <td>Dr. Maria Hernandez</td>
+              <td>General Surgery</td>
+              <td>10</td>
+              <td>+1 (555) 234-5678</td>
+              <td class="status on-leave">ON LEAVE</td>
+            </tr>
+            <tr>
+              <td>DOC003</td>
+              <td>Dr. James Johnson</td>
+              <td>Oncology</td>
+              <td>15</td>
+              <td>+1 (555) 345-6789</td>
+              <td class="status active">ACTIVE</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
   </div>
-
   <!-- JavaScript -->
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
